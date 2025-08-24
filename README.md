@@ -2,24 +2,7 @@
 
 A comprehensive Node.js + Express.js API for user and service provider management in the RepairO project. Features JWT authentication, MongoDB integration, and RESTful API endpoints.
 
-## 🚀 Features
 
-- **User Management**: Register, login, profile management for regular users
-- **Service Provider Management**: Specialized registration and management for service providers
-- **JWT Authentication**: Secure token-based authentication
-- **MongoDB Integration**: Robust data persistence with Mongoose ODM
-- **Input Validation**: Comprehensive validation using express-validator
-- **RESTful API**: Clean, well-structured API endpoints
-- **Expertise Categories**: Predefined service categories for providers
-- **Profile Management**: View, edit, and delete user accounts
-- **Email Integration**: Welcome emails and forgot password functionality using SendPulse API
-- **Error Handling**: Proper HTTP status codes and error messages
-
-## 📋 Prerequisites
-
-- Node.js (v14 or higher)
-- MongoDB (v4.4 or higher)
-- npm or yarn
 
 ## 🛠️ Installation
 
@@ -65,36 +48,6 @@ A comprehensive Node.js + Express.js API for user and service provider managemen
 6. **Access the API**
    - API Base URL: http://localhost:3000
    - API Documentation: http://localhost:3000
-
-## 🏗️ Project Structure
-
-```
-UserManagement/
-├── models/
-│   ├── User.js                 # User model with Mongoose schema
-│   └── ServiceProvider.js      # Service provider model
-├── controllers/
-│   ├── authController.js       # Authentication logic
-│   ├── userController.js       # User management
-│   └── serviceProviderController.js # Service provider management
-├── services/
-│   ├── authService.js          # Authentication business logic
-│   ├── userService.js          # User business logic
-│   ├── serviceProviderService.js # Service provider business logic
-│   └── emailService.js         # Email functionality using SendPulse API
-├── routes/
-│   ├── auth.js                 # Authentication routes
-│   ├── users.js                # User routes
-│   └── serviceProviders.js     # Service provider routes
-├── middleware/
-│   ├── auth.js                 # JWT authentication middleware
-│   └── validation.js           # Input validation middleware
-
-├── server.js                   # Main server file
-├── package.json                # Dependencies and scripts
-├── config.env                  # Environment variables
-└── README.md                   # This file
-```
 
 ## 🔌 API Endpoints
 
@@ -320,28 +273,3 @@ npm test
   updatedAt: Date
 }
 ```
-
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
-
-## 📄 License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
-
-## 🆘 Support
-
-For support and questions:
-- Create an issue in the repository
-- Contact the development team
-- Check the API documentation
-
-## 🔄 Version History
-
-- **v1.0.0**: Initial release with complete user management system
-- Features: User/Service Provider registration, authentication, profile management
-- Backend: Express.js with MongoDB, JWT authentication, comprehensive validation
